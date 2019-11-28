@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 def inicializar_tabela_de_pagina(tabela_de_pagina,n):
     for i in range(0,n):
         tabela_de_pagina[i] = 0
@@ -38,3 +40,12 @@ print("QUANTIDADE DE ACERTOS DE PAGINA:",acerto_pagina)
 print("QUANTIDADE DE FALHAS DE PAGINA:",falha_pagina)
 print("QUANTIDADE DE ACESSOS A MEMORIA:",acesso_memoria)
 print("QUANTIDADE DE OPERACOES DE E/S REALIZADAS:",operacao_ES);
+
+y = [acerto_pagina,falha_pagina,acesso_memoria,operacao_ES]
+x = ["ACERTOS DE PAGINA","FALHAS DE PAGINA","ACESSO A MEMORIA","OPERACOES DE E/S"]
+plt.bar(x,y,color="red")
+plt.xticks(x)
+plt.ylabel("Qtd.")
+plt.xlabel("Variaveis")
+plt.title("Resultados para a sequencia 1")
+plt.show()
