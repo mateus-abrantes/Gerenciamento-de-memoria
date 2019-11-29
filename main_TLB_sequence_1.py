@@ -91,8 +91,8 @@ print("QUANTIDADE DE ACERTOS DE PAGINA:",acerto_pagina)
 print("QUANTIDADE DE FALHAS DE PAGINA:",falha_pagina)
 print("QUANTIDADE DE ACESSOS A MEMORIA:",acesso_memoria)
 print("QUANTIDADE DE OPERACOES DE E/S REALIZADAS:",operacao_ES)
-print("QUANTIDADE DE FALHAS NA TLB",falha_TLB)
-print("QUANTIDADE DE ACERTOS NA TLB",acerto_TLB)
+print("QUANTIDADE DE FALHAS NA TLB:",falha_TLB)
+print("QUANTIDADE DE ACERTOS NA TLB:",acerto_TLB)
 y = [acerto_pagina,falha_pagina,acesso_memoria,operacao_ES,falha_TLB,acerto_TLB]
 x = ["ACERTOS DE PAGINA","FALHAS DE PAGINA","ACESSO A MEMORIA","OPERACOES DE E/S","FALHAS NA TLB","ACERTOS NA TLB"]
 plt.bar(x,y,color="red")
