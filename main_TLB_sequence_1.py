@@ -46,7 +46,7 @@ tabela_de_pagina = [False]*1024
 inicializar_tabela_de_pagina(tabela_de_pagina,1024)
 fila_TLB = deque([])
 TLB_line = {"pagina":None,"validade":False}
-TLB = create_TLB(TLB_line,10)
+TLB = create_TLB(TLB_line,128)
 acerto_TLB = 0
 falha_TLB = 0
 acerto_pagina = 0
